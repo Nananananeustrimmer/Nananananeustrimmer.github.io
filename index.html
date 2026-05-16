@@ -9,13 +9,27 @@
 
 <body>
 <div class="video-container">
-    <video autoplay loop muted>
+    <video autoplay loop muted poster>
         <source src="videos/genaaid.mp4" type="video/mp4">
     </video>
     <div class="text-overlay">
-        <h1>William 🔥💯💅</h1>
+        <h1>
+            <span class="name">William</span>
+            <span class="emoji">🔥💯💅</span>
+        </h1>
     </div>
 </div>
+
+<audio id="entry_of_the_gladiators" loop>
+    <source src="audio/entry_of_the_gladiators.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    const music = document.getElementById("entry_of_the_gladiators");
+    document.addEventListener("click", () => {
+        music.play();
+    }, { once: true });
+</script>
 
 </body>
 </html>
